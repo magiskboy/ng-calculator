@@ -1,0 +1,12 @@
+<div class="top">
+    <cal-screen scr-expression="$ctrl.expression" scr-result="$ctrl.result"></cal-screen>
+</div>
+<div class="keyboard">
+        <cal-button ng-repeat="button in $ctrl.keyboard"
+            name="{{button.name}}"
+            type="{{button.type}}"
+            btn-label="button.label"
+            ng-click="button.handler(button.passValue)"
+        >
+        </cal-button>
+</div>

@@ -1,0 +1,81 @@
+cal-main {
+    width: 350px;
+    background-color: hsl(0, 0%, 0%);
+    padding: .3em;
+    border: .2em solid hsl(0, 0%, 30%);
+    min-height: 500px;
+}
+
+cal-main .keyboard {
+    margin-top: .5em;
+    border-top: 1px solid hsl(0, 0%, 30%);
+    padding-top: .5em;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-areas:
+        "ac ac div mul"
+        "seven eight nine sub"
+        "four five six plus"
+        "one two three equal"
+        "zero zero dot equal";
+}
+
+cal-main .keyboard cal-button[type="operator"] {
+    background-color: hsl(0, 0%, 40%);
+}
+
+cal-main .keyboard cal-button[name="ac"] {
+    grid-area: ac;
+    background-color: hsl(0, 50%, 45%);
+}
+cal-main .keyboard cal-button[name="div"] {
+    grid-area: div;
+}
+cal-main .keyboard cal-button[name="mul"] {
+    grid-area: mul;
+}
+cal-main .keyboard cal-button[name="plus"] {
+    grid-area: plus;
+}
+cal-main .keyboard cal-button[name="sub"] {
+    grid-area: sub;
+}
+cal-main .keyboard cal-button[name="equal"] {
+    grid-area: equal;
+    background-color: hsl(200, 100%, 20%);
+}
+cal-main .keyboard cal-button[name="dot"] {
+    grid-area: dot;
+}
+cal-main .keyboard cal-button[name="one"] {
+    grid-area: one;
+}
+cal-main .keyboard cal-button[name="two"] {
+    grid-area: two;
+}
+cal-main .keyboard cal-button[name="three"] {
+    grid-area: three;
+}
+cal-main .keyboard cal-button[name="four"] {
+    grid-area: four;
+}
+cal-main .keyboard cal-button[name="five"] {
+    grid-area: five;
+}
+cal-main .keyboard cal-button[name="six"] {
+    grid-area: six;
+}
+cal-main .keyboard cal-button[name="seven"] {
+    grid-area: seven;
+}
+cal-main .keyboard cal-button[name="eight"] {
+    grid-area: eight;
+}
+cal-main .keyboard cal-button[name="nine"] {
+    grid-area: nine;
+}
+cal-main .keyboard cal-button[name="zero"] {
+    grid-area: zero;
+}
