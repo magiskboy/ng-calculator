@@ -27,3 +27,4 @@ jobs:
         with:
           BRANCH: gh-pages
           FOLDER: .
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
