@@ -1,12 +1,19 @@
 import template from './template'
 import style from './style'
 
-const nameModule = 'cal-app'
-const nameComponent = 'calApp'
+const nameModule = 'cal-screen'
+const nameComponent = 'calScreen'
 
-angular.module(nameModule)
+const CalScreenController = function ($element, $attrs) {
+    let self = this;
+
+    self.expression = $attrs.expression;
+    self.result = $attrs.result;
+}
+
+angular.module(nameModule, [])
 .component(nameComponent, {
-    templateUrl: template,
+    template: template,
     controller: ['$element', '$attrs', CalScreenController],
     bindings: {
         scrExpression: '<',
@@ -14,9 +21,4 @@ angular.module(nameModule)
     }
 });
 
-const CalScreenController = function ($element, $attrs) {
-    let self = this;
-    
-    self.expression = $attrs.expression;
-    self.result = $attrs.result;
-}
+export { nameComponent, nameModule }

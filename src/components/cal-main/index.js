@@ -1,15 +1,9 @@
-import angular from 'angularjs'
 import template from './template'
 import style from './style'
 
+
 const nameModule = 'cal-main'
 const nameComponent = 'calMain'
-
-angular.module(nameModule, [])
-.component(nameComponent, {
-    template: style,
-    controller: ['$element', '$attrs', CalMainController]
-});
 
 const CalMainController = function ($element, $attrs) {
     let self = this;
@@ -74,5 +68,11 @@ const CalMainController = function ($element, $attrs) {
         }
     }
 }
+
+angular.module(nameModule, [])
+.component(nameComponent, {
+    template: template,
+    controller: ['$element', '$attrs', CalMainController]
+});
 
 export { nameComponent, nameModule }

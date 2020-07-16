@@ -8,7 +8,7 @@ module.exports = {
   },
   mode: 'development',
   resolve: {
-    extensions: ['js', 'css', 'html']
+    extensions: ['.js', '.css', '.html']
   },
   module: {
     rules: [
