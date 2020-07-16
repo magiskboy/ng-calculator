@@ -3,14 +3,8 @@
 
 ### Installation
 
-#### Requirement
-
-* NodeJS
-* Bower
-* Simple webserver as `http-server` 
-
-```bash
-$ bower install
-
-$ http-server
+```sh
+$ npm i
+$ npm run build
+$ http-server .
 ```
