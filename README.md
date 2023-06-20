@@ -13,3 +13,7 @@ $ http-server .
 ```
 
 [Demo](https://magiskboy.github.io/ng-calculator)
+
+### Screenshot
+
+![ng-calculator](./screenshot.png)

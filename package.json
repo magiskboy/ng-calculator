@@ -2,14 +2,19 @@
   "name": "simple-calculator",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack --dev"
   },
   "dependencies": {
-    "angularjs": "0.0.1",
-    "webpack": "~4.28.2",
-    "webpack-cli": "~3.1.2",
-    "css-loader": "^2.1.1",
-    "html-loader": "^0.5.5",
-    "style-loader": "^0.23.1"
+    "angularjs": "^0.0.1",
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
+    "webpack-dev-server": "^4.15.1"
   }
 }
