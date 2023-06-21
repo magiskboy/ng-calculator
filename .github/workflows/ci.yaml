@@ -22,10 +22,9 @@ jobs:
           npm i
           export PATH=$(npm bin):$PATH
           npm run build
-          cp index.html dist
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: public
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
