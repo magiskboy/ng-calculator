@@ -8,8 +8,7 @@
 
 ```sh
 $ npm i
-$ npm run build
-$ http-server .
+$ npm run dev
 ```
 
 [Demo](https://magiskboy.github.io/ng-calculator)
